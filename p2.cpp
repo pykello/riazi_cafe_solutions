@@ -17,6 +17,15 @@ int main() {
         for (int left = 0; left <= n - 1; left++) {
             int right = n - 1 - left;
             /*
+             * Root of tree can't be in a photo, since it doesn't have a father or brother.
+             *
+             * photos_this_level = number of photos in which left child or right child of
+             * root in father role.
+             * 
+             * So max number of photos with "left" children in left subtree, and "right"
+             * children in right subtree will be photos_this_level + max_photos[left] +
+             * max_photos[right].
+             *
              * If both subtrees have size >= 2 (that means both left & right child will have
              * a child), we can take create 2 photos in which children of root are in "father"
              * role:
