@@ -80,6 +80,6 @@ void recurse(int p, int a, int b)
 int main()
 {
     recurse(0, 0, 0);
-    cout << maxScore << " " << maxScoreCount << endl;
+    cout << "maxScore: " << maxScore << ", # of strategies with maxScore: " << maxScoreCount << endl;
     return 0;
 }
