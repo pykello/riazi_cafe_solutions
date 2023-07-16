@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-const int N = 4;
+const int N = 10;
 int c[N];
 
 int bt(int idx, int rem) {
