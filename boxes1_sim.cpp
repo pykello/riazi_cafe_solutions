@@ -17,7 +17,7 @@ int sim() {
 }
 
 int main() {
-    int N = 1000;
+    int N = 10000;
     double sum = 0;
     for (int i = 0; i < N; i++)
     {
